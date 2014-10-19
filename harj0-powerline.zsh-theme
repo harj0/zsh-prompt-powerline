@@ -30,16 +30,16 @@ zstyle ':prompt:*:applejack'    host-color 208
 zstyle ':prompt:*:fluttershy'   host-color 226
 
 # only show username on remote server or if it's different from my default
-[[ -n $SSH_CONNECTION || $USER == valodim ]] && zstyle ':prompt:powerline:ps1' hide-user 1
+[[ -n $SSH_CONNECTION || $USER == trey ]] && zstyle ':prompt:powerline:ps1' hide-user 1
 
 # enable check-for-changes, for the ¹² indicators in git
 zstyle ':vcs_info:*:powerline:*' check-for-changes true
 
 # if you are using the new powerline symbols, uncomment these lines.
-# zstyle ':prompt:powerline:ps1' sep1-char ''
-# zstyle ':prompt:powerline:ps1' sep2-char ''
-# zstyle ':prompt:powerline:ps1' lock-char ''
-# zstyle ':prompt:powerline:ps1' branch-char ''
+zstyle ':prompt:powerline:ps1' sep1-char ''
+zstyle ':prompt:powerline:ps1' sep2-char ''
+zstyle ':prompt:powerline:ps1' lock-char ''
+zstyle ':prompt:powerline:ps1' branch-char ''
 
 ### load some optional hooks which add further functionality. uncomment to enable.
 
