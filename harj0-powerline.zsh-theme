@@ -44,7 +44,7 @@ zstyle ':prompt:powerline:ps1' branch-char ''
 ### load some optional hooks which add further functionality. uncomment to enable.
 
 # disambiguate the pathname instead of last three elements (/u/s/z/functions -> share/zsh/functions)
-# source hooks/prompt-disambiguate.zsh
+source hooks/prompt-disambiguate.zsh
 
 # show signal names instead of exit codes based on a heuristic (130 -> INT)
 # source hooks/prompt-exitnames.zsh
