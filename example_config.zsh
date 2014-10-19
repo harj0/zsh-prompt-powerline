@@ -1,4 +1,4 @@
-
+#!/bin/zsh
 # this is an example configuration file for zsh powerline prompt. it shows
 # various configuration features and some hooks which you may or may not find
 # helpful, and which are supported by the powerline prompt.
