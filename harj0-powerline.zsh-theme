@@ -17,7 +17,7 @@ zmodload zsh/parameter
 # we can never know for sure powerline font is installed, but in my case if I'm
 # on rxvt-unicode, chances are good. note that most zstyles have to be set
 # before the prompt is loaded since they are not continuously re-evaluated.
-[[ $TERM == "rxvt-unicode-256color" ]] || return 3
+[[ $TERM == "xterm-256color" ]] || return 3
 
 
 ### additional zstyles
@@ -30,14 +30,14 @@ zstyle ':prompt:*:applejack'    host-color 208
 zstyle ':prompt:*:fluttershy'   host-color 226
 
 # only show username on remote server or if it's different from my default
-[[ -n $SSH_CONNECTION || $USER == trey ]] && zstyle ':prompt:powerline:ps1' hide-user 1
+[[ -n $SSH_CONNECTION || $USER == harj0 ]] && zstyle ':prompt:powerline:ps1' hide-user 1
 
 # enable check-for-changes, for the ¹² indicators in git
 zstyle ':vcs_info:*:powerline:*' check-for-changes true
 
 # if you are using the new powerline symbols, uncomment these lines.
 zstyle ':prompt:powerline:ps1' sep1-char ''
-zstyle ':prompt:powerline:ps1' sep2-char ''
+zstyle ':prompt:powerline:ps1' sep2-char ''
 zstyle ':prompt:powerline:ps1' lock-char ''
 zstyle ':prompt:powerline:ps1' branch-char ''
 
