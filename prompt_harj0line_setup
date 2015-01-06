@@ -35,8 +35,8 @@ prompt_powerline_vcsstyles () {
     # we only use one, so onl pay for one.
     zstyle ':vcs_info:*:powerline:*' max-exports 1
 
-    zstyle ':vcs_info:*:powerline:*' unstagedstr '¹'  # display ¹ if there are unstaged changes
-    zstyle ':vcs_info:*:powerline:*' stagedstr '²'    # display ² if there are staged changes
+    zstyle ':vcs_info:*:powerline:*' unstagedstr ''  # display ¹ if there are unstaged changes
+    zstyle ':vcs_info:*:powerline:*' stagedstr ''    # display ² if there are staged changes
 
     # non-vcs
     zstyle ':vcs_info:*:powerline:*' nvcsformats   "%K{black}$sep1%F{white} %1v%F{black} "
@@ -50,8 +50,8 @@ prompt_powerline_vcsstyles () {
     zstyle ':vcs_info:hg:powerline:*' actionformats  "%K{23}$sep1%F{123} ☿ ${FMT_BRANCH}${FMT_ACTION} %F{23}${FMT_PATH} "
 
     # special git stuff
-    zstyle ':vcs_info:git:powerline:*' formats       "%K{23}$sep1%F{123} ± ${FMT_BRANCH} %m%F{23}${FMT_PATH} "
-    zstyle ':vcs_info:git:powerline:*' actionformats "%K{23}$sep1%F{123} ± ${FMT_BRANCH}${FMT_ACTION} %m%F{23}${FMT_PATH} "
+    zstyle ':vcs_info:git:powerline:*' formats       "%K{23}$sep1%F{123}  ${FMT_BRANCH} %m%F{23}${FMT_PATH} "
+    zstyle ':vcs_info:git:powerline:*' actionformats "%K{23}$sep1%F{123}  ${FMT_BRANCH}${FMT_ACTION} %m%F{23}${FMT_PATH} "
 
     # lofi formats
     # for details see here: https://github.com/Valodim/zshrc/blob/master/custom/96-vcs_info-lofi.zsh
